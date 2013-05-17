@@ -8,6 +8,8 @@
     <!-- Example to add minimal theme template for the
          tiles editiong overlays -->
     <!--<theme href="minimal.html" if-path="@@edit-tile" />-->
+
+    <!--<theme href="frontpage.html" css:if-content="body.section-front-page" />-->
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
@@ -33,10 +35,10 @@
         <drop theme="/html/head/link" />
 
         <!-- Custom favicon implementation -->
-        <!--<drop content="link[@type='image/x-icon']" />
+        <drop content="link[@type='image/x-icon']" />
         <after theme="/html/head">
-            <link rel="shortcut icon" href="/++theme++folia.jmstheme/img/favicon.ico" type="images/x-icon" />
-        </after>-->
+            <link rel="shortcut icon" href="/++theme++kk.asg/img/favicon.ico" type="images/x-icon" />
+        </after>
 
         <after theme="/html/body"
             content="//div[@data-iframe='plone-toolbar']" />
@@ -61,12 +63,15 @@
         <!--<replace css:content="#portal-siteactions li" css:theme-children="#global-nav" />-->
 
         <!-- Portal searchbox -->
-        <!--<copy attributes="action" css:content="#portal-searchbox form"
-            css:theme="#portal-searchbox" />-->
+        <replace css:content="#portal-searchbox" css:theme-children="#search" />
 
         <!-- Global navigation -->
         <replace css:content="#portal-globalnav li"
             css:theme-children="#main-nav" />
+
+        <!-- Banner -->
+        <replace css:content="#viewlet-above-content-title"
+            css:theme-children="#banner" />
 
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs'
@@ -84,9 +89,12 @@
         <replace css:content-children="#viewlet-below-content"
             css:theme-children="#below-main-content" />
 
+        <!-- Edit bar -->
+        <before css:content="#edit-bar" css:theme="#content" />
+
         <!-- Columns -->
         <replace css:content-children="#portal-column-one > *"
-            css:theme-children="#sidebar-left" />
+            css:theme-children="#sub" />
         <replace css:content-children="#portal-column-two > *"
             css:theme-children="#sidebar-right" />
 
