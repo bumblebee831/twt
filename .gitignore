@@ -32,4 +32,6 @@ src/plone.tiles
 src/kk.tiles
 src/sauna.reload
 src/vwc.toolbar/
+src/kk.bannertool
+src/plone.app.contenttypes
 .codeintel/
