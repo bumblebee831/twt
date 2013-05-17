@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='TWT Diazo Plone Theme',
+setup(name='kk.twt',
       version=version,
       description="TWT Diazo Plone Theme",
       long_description=open("README.txt").read() + "\n" +
