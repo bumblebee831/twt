@@ -37,7 +37,7 @@
         <!-- Custom favicon implementation -->
         <drop content="link[@type='image/x-icon']" />
         <after theme="/html/head">
-            <link rel="shortcut icon" href="/++theme++kk.asg/img/favicon.ico" type="images/x-icon" />
+            <link rel="shortcut icon" href="/++theme++kk.twt/img/favicon.ico" type="images/x-icon" />
         </after>
 
         <after theme="/html/body"

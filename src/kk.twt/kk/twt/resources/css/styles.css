@@ -5409,25 +5409,28 @@ table.grid th {
 a {
   outline: none !important;
 }
-.section-text-will-toene {
-  background: url("../img/bg01.jpg") 0 0 transparent;
-  background-attachment: fixed;
+body {
+  background: transparent;
+}
+/*.section-text-will-toene {
+    background: url("../img/bg01.jpg") 0 0 transparent;
+    background-attachment:fixed;
 }
 .section-fakstheater {
-  background: url("../img/bg02.jpg") 0 0 transparent;
-  background-attachment: fixed;
+    background: url("../img/bg02.jpg") 0 0 transparent;
+    background-attachment:fixed;
 }
 .section-andraerecords {
-  background: url("../img/bg03.jpg") 0 0 transparent;
-  background-attachment: fixed;
-}
+    background: url("../img/bg03.jpg") 0 0 transparent;
+    background-attachment:fixed;
+}*/
 .container {
   max-width: 940px;
   margin: 0px;
   border: 1px solid red;
 }
 #topwrapper {
-  border: 1px solid blue;
+  border: 0px solid blue;
   background: transparent;
   margin: 0;
   width: 100%;
