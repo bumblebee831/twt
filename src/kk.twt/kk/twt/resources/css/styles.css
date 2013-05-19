@@ -5412,53 +5412,50 @@ a {
 body {
   background: transparent;
 }
-/*.section-text-will-toene {
-    background: url("../img/bg01.jpg") 0 0 transparent;
-    background-attachment:fixed;
+.section-text-will-toene {
+  border-top: 20px solid #3366cc;
+  border-left: 10px solid #3366cc;
 }
 .section-fakstheater {
-    background: url("../img/bg02.jpg") 0 0 transparent;
-    background-attachment:fixed;
+  border-top: 20px solid #ff9900;
+  border-left: 10px solid #ff9900;
 }
 .section-andraerecords {
-    background: url("../img/bg03.jpg") 0 0 transparent;
-    background-attachment:fixed;
-}*/
+  border-top: 20px solid #339900;
+  border-left: 10px solid #339900;
+}
 .container {
   max-width: 940px;
   margin: 0px;
-  border: 1px solid red;
+  border: 0px solid red;
 }
-#topwrapper {
+.row {
+  border: 0px solid red;
+}
+.dist {
   border: 0px solid blue;
-  background: transparent;
-  margin: 0;
-  width: 100%;
-}
-#search {
-  border: 1px solid red;
-  padding: 25px;
 }
 .navbar {
-  background-color: white;
+  background-color: transparent;
   border-radius: 0;
   padding: 0;
   position: relative;
-  border: 2px solid black;
-  border-width: 2px 0;
 }
 .navbar .nav > li {
-  float: left;
-  width: 156px;
   border: 0px solid red;
-  text-align: center;
+  background: black;
+  text-align: left;
+  width: 100%;
+  border-radius: 0px 6px 6px 0px;
+  margin: 12.5px 0 0 0;
 }
 .navbar .nav > li > a {
-  color: black;
+  color: white;
   font-weight: bold;
   line-height: 20px;
   padding-bottom: 12.5px;
   padding-top: 12.5px;
+  text-transform: uppercase;
 }
 .navbar .nav > li > a:hover {
   color: #fdb813;
@@ -5478,24 +5475,16 @@ body {
   font-size: 13.6px;
 }
 #sub {
-  border: 0px solid red;
-}
-.sub {
-  padding: 0px;
-  background: #fdf102;
-}
-.no {
-  padding: 0px;
-}
-.no1 {
-  padding-left: 0px;
-  padding-bottom: 10px;
+  border: 1px solid red;
 }
 #content #viewlet-above-content-title {
   display: none;
 }
 #banner {
   border: 0px solid red;
+}
+#content-views {
+  margin: 0px;
 }
 .portletNavigationTree {
   border: 0px solid red;
@@ -5549,39 +5538,6 @@ body {
 .portletNavigationTree .contenttype-formfolder img {
   display: none;
 }
-.box {
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 150% auto;
-  min-height: 300px;
-}
-.box-body {
-  border: 0px solid red;
-  min-height: 170px;
-}
-.box-footer {
-  border: 0px solid red;
-  padding: 25px;
-  font-size: 19px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#box01 {
-  background-image: url("../img/box01.jpg");
-}
-#box02 {
-  background-image: url("../img/box02.jpg");
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 300% auto;
-}
-#box03 {
-  background: #fdf102;
-}
-#box07 {
-  background: #fdb813;
-  color: white;
-}
 #site-footer {
   background: #858387;
   padding: 11px 14px;
@@ -5593,210 +5549,4 @@ body {
 }
 #site-footer .center {
   margin-top: 75px;
-}
-#search {
-  background: transparent;
-  clear: right;
-  float: right;
-  height: auto;
-  margin: 50px 0 0 0;
-  padding: 0px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 2;
-  border: 0px;
-}
-.searchField {
-  border: 0px !important;
-  width: 200px;
-  float: right;
-  margin: 0px 0px 0px 0px;
-  background: #eeeeee !important;
-  border-radius: 0px !important;
-  color: #cccccc;
-}
-#searchGadget {
-  box-shadow: none !important;
-}
-.LSBox .searchButton {
-  background: transparent;
-  border: 0px;
-  color: white;
-  cursor: pointer;
-  font-size: 0.8em;
-  font-weight: bold;
-  margin: 0px 0px 0px 0px;
-  padding: 16px;
-  width: 16px;
-  height: 16px;
-  z-index: 33;
-  float: left;
-  text-indent: -999999px;
-  border: 0px solid red;
-}
-#portal-searchbox {
-  background: transparent;
-  clear: right;
-  float: right;
-  padding: 0px;
-  text-align: left;
-  text-transform: lowercase;
-  white-space: nowrap;
-  z-index: 2;
-}
-#portal-searchbox form {
-  white-space: nowrap;
-}
-div #portal-advanced-search {
-  display: none !important;
-}
-dl.searchResults dt {
-  font-size: 140%;
-  font-weight: normal;
-}
-form.searchPage {
-  text-align: left;
-  padding: 25px;
-}
-form.searchPage dd {
-  margin: 20px 0px 20px 0px;
-}
-form.searchPage input.searchButton {
-  margin: 0px 0px 0px 10px;
-  width: 100px;
-  height: 30px;
-}
-form.searchPage input {
-  margin: 0px;
-}
-#rss-subscription {
-  display: none !important;
-}
-#search-field {
-  padding: 0px !important;
-  margin: 0px 0px 0px -20px;
-}
-.collapsible .collapser.collapsed {
-  background: transparent;
-  padding-right: 14px;
-}
-.collapsible .collapser.expanded {
-  background: transparent;
-  padding-right: 14px;
-}
-.LSRes {
-  background-color: White;
-  color: #436976;
-  display: block;
-  line-height: 1.1em;
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  min-width: 16.5em;
-  text-align: left;
-  text-transform: none;
-  vertical-align: middle;
-  visibility: visible;
-}
-#LSHighlight,
-.LSHighlight {
-  background-color: #DEE7EC;
-  border: 1px solid #8CACBB;
-  color: #436976;
-}
-.LSTable {
-  margin: 1em 0;
-}
-.LSRow {
-  border: 1px solid White;
-  list-style-image: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  white-space: normal;
-}
-.LSRow a {
-  font-weight: bold;
-  text-decoration: none;
-  white-space: nowrap;
-  font-size: 65%;
-}
-.LSDescr {
-  color: #76797C;
-  font-size: 65%;
-  font-weight: normal;
-  margin-left: 2.5em;
-}
-.LSResult {
-  display: block;
-  left: 3px;
-  margin: 0;
-  padding-top: 15px;
-  position: relative;
-  text-align: right;
-  z-index: 3;
-}
-.LSShadow {
-  position: relative;
-  text-align: right;
-}
-.livesearchContainer {
-  background-color: white;
-  border: 1px solid white;
-  color: #436976;
-  margin-top: 40px;
-  padding: 0 !important;
-  position: absolute;
-  right: 0;
-  text-align: left;
-  text-transform: none;
-  top: 0;
-  visibility: visible;
-  white-space: normal;
-  width: 14em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.3);
-}
-#livesearchLegend {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: white;
-  border-style: solid solid none;
-  border-width: 1px 1px 0;
-  line-height: 1em;
-  margin-left: 0;
-  margin-top: 1em;
-  background-color: white;
-  width: 14em;
-  padding: 0px 0px 10px 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-.LSIEFix {
-  background-color: White;
-  padding: 0.5em !important;
-  z-index: 20;
-}
-.LSBox {
-  clear: left;
-  display: block;
-  float: left;
-  padding-right: 1px;
-  text-align: right;
-}
-#LSNothingFound {
-  padding: 2px;
-  text-align: left;
-}
-.LSBox label {
-  font-weight: normal;
 }
