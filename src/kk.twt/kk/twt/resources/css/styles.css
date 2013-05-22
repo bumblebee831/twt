@@ -5406,23 +5406,45 @@ table.grid th {
   font-family: 'redactedregular';
   color: #555555;
 }
-a {
-  outline: none !important;
-}
 body {
   background: transparent;
 }
-.section-text-will-toene {
-  border-top: 20px solid #3366cc;
-  border-left: 10px solid #3366cc;
+dd {
+  margin-left: 0px;
 }
-.section-fakstheater {
+dt,
+dd {
+  line-height: 25px;
+}
+dl {
+  margin-bottom: 25px;
+}
+.wrapper {
+  width: 100%;
+}
+.section-text-will-toene .wrapper {
+  border-top: 20px solid #016277;
+  border-left: 10px solid #016277;
+}
+.section-fakstheater .wrapper {
   border-top: 20px solid #ff9900;
   border-left: 10px solid #ff9900;
 }
-.section-andraerecords {
+.section-andraerecords .wrapper {
   border-top: 20px solid #339900;
   border-left: 10px solid #339900;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+a {
+  outline: none !important;
+}
+p {
+  margin: 0px 0px 25px 0px;
 }
 .container {
   max-width: 940px;
@@ -5440,25 +5462,27 @@ body {
   border-radius: 0;
   padding: 0;
   position: relative;
+  margin-top: 25px;
 }
 .navbar .nav > li {
-  border: 0px solid red;
+  margin: 0px 0px 6.25px 0px;
+  text-align: left !important;
+  width: 100% !important;
   background: black;
-  text-align: left;
-  width: 100%;
-  border-radius: 0px 6px 6px 0px;
-  margin: 12.5px 0 0 0;
+  padding: 8.333333333333334px 0px 8.333333333333334px 0 !important;
+  border-radius: 0px 5px 5px 0px;
 }
 .navbar .nav > li > a {
   color: white;
   font-weight: bold;
-  line-height: 20px;
-  padding-bottom: 12.5px;
-  padding-top: 12.5px;
   text-transform: uppercase;
+  font-size: 24px;
 }
 .navbar .nav > li > a:hover {
   color: #fdb813;
+}
+.selected {
+  background: #016277 !important;
 }
 .selected a {
   color: #fdb813 !important;
@@ -5475,7 +5499,8 @@ body {
   font-size: 13.6px;
 }
 #sub {
-  border: 1px solid red;
+  border: 0px solid red;
+  margin-bottom: 25px;
 }
 #content #viewlet-above-content-title {
   display: none;
@@ -5485,6 +5510,38 @@ body {
 }
 #content-views {
   margin: 0px;
+}
+#brand {
+  background: #016277;
+  padding: 25px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+}
+.logo {
+  vertical-align: bottom;
+  border: 0px solid red;
+}
+.claim {
+  vertical-align: bottom !important;
+  border: 0px solid red;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12.6px;
+  margin-top: 50px;
+  line-height: 12.5px;
+}
+#content {
+  border: 0px solid red;
+  background: url(../img/transparent.png) repeat left top transparent;
+  margin-top: 12.5px;
+  border-radius: 5px;
+  padding: 25px;
+}
+.documentFirstHeading {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 27.2px;
 }
 .portletNavigationTree {
   border: 0px solid red;
@@ -5496,22 +5553,26 @@ body {
   list-style: none;
   padding: 0px 0px 0px 0px !important;
   border: 0px solid red;
-  padding: 0 37.5px !important;
+  padding: 0;
   margin: 0px !important;
   text-align: left !important;
+  width: 60% !important;
 }
 .portletNavigationTree li {
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 6.25px 0px;
   text-align: left !important;
-  padding: 0px !important;
+  width: 100% !important;
+  background: black;
+  padding: 8.333333333333334px 0px 8.333333333333334px 12.5px !important;
+  border-radius: 0px 5px 5px 0px;
 }
 .portletNavigationTree li a {
-  padding: 0px !important;
   font-size: 19px;
   background: transparent;
-  color: black !important;
   text-align: left !important;
   font-weight: bold;
+  border: 0px solid red;
+  color: white;
 }
 .portletNavigationTree li a:hover {
   background: transparent;
@@ -5523,13 +5584,8 @@ body {
   text-align: left !important;
   line-height: 25px;
 }
-.portletNavigationTree .navTreeTopNode a {
-  background-color: transparent;
-  border-left: 0 !important;
-  margin-left: -20px !important;
-  margin-right: 0 !important;
-  font-size: 32px !important;
-  line-height: 50px;
+.portletNavigationTree .navTreeCurrentNode {
+  background-color: #016277;
 }
 .portletNavigationTree .navTreeCurrentItem span {
   color: #fdb813 !important;
