@@ -5588,6 +5588,13 @@ p {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+.formControls {
+  background-color: #F5F5F5;
+  border-top: 1px solid #E5E5E5;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 25px;
+}
 .portletNavigationTree {
   border: 0px solid red;
 }
