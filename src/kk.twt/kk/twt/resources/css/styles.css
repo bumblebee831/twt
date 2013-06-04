@@ -5419,6 +5419,9 @@ dd {
 dl {
   margin-bottom: 25px;
 }
+hr {
+  margin: 25px 0;
+}
 .wrapper {
   width: 100%;
 }
