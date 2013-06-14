@@ -5468,7 +5468,7 @@ p {
   margin: 0px 0px 6.25px 0px;
   text-align: left !important;
   width: 100% !important;
-  background: black;
+  background: #333333;
   padding: 8.333333333333334px 0px 8.333333333333334px 0 !important;
   border-radius: 0px 5px 5px 0px;
 }
@@ -5617,7 +5617,7 @@ p {
   margin: 0px 0px 6.25px 0px;
   text-align: left !important;
   width: 100% !important;
-  background: black;
+  background: #333333;
   padding: 8.333333333333334px 0px 8.333333333333334px 12.5px !important;
   border-radius: 0px 5px 5px 0px;
 }
