@@ -5422,6 +5422,78 @@ dl {
 hr {
   margin: 25px 0;
 }
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555555;
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  min-height: 20px;
+  padding: 8px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  vertical-align: middle;
+}
+legend {
+  border: 0px solid red;
+  border-radius: 4px;
+  color: #333333;
+  display: block;
+  font-size: 20.8px;
+  line-height: inherit;
+  margin-bottom: 0;
+  padding: 25px;
+  width: 100% !important;
+  background: white;
+  background-color: #cccccc;
+}
+.label {
+  background-color: #cccccc;
+  color: #FFFFFF;
+  display: block;
+  font-size: 12.307692307692307px;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 25px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+div.formHelp,
+span.formHelp {
+  color: black;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: left;
+}
+fieldset {
+  border: 0px dotted #CCCCCC;
+  line-height: 1.5em;
+  margin: 1em 0;
+  padding: 0 1em 1em;
+  width: auto;
+  background: white;
+  border-radius: 4px;
+}
 .wrapper {
   width: 100%;
 }
@@ -5555,14 +5627,20 @@ p {
   border-radius: 5px;
   padding: 25px;
 }
-.subsection-theaterstuecke #content {
+.subsection-theaterstuecke #content,
+.subsection-ueber-uns #content,
+.subsection-konzerte #content,
+.subsection-workshops #content {
   border: 0px solid red;
   background: transparent;
   margin-top: 0;
   border-radius: 5px;
   padding: 0;
 }
-.subsection-theaterstuecke .documentFirstHeading {
+.subsection-theaterstuecke .documentFirstHeading,
+.subsection-ueber-uns .documentFirstHeading,
+.subsection-konzerte .documentFirstHeading,
+.subsection-workshops .documentFirstHeading {
   display: none;
 }
 .item {

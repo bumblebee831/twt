@@ -1,0 +1,417 @@
+// Custom application specific styles
+//--------------------------------------
+
+
+// Bootstrap overrides
+// -------------------
+
+// Just take and redefine variables form variables.less in order to customize
+// bootstrap default files without even touching them, e.g.:
+
+@font-size-base:          16px;
+@line-height-base:        25px;
+
+
+// Use web-font as a lorem ipsum replacement - add class "wireframed" to make
+// blocks of text act as a placeholder
+.wireframed {
+  font-family: 'redactedregular';
+  color: @gray;
+}
+
+
+// Application specific styles 
+
+
+body {
+  background: transparent;
+}
+
+dd {
+    margin-left: 0px;
+}
+dt, dd {
+    line-height: @line-height-base;
+}
+
+dl {
+    margin-bottom: @line-height-base;
+}
+hr {
+    margin: @line-height-base 0;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    min-height: 20px;
+    padding: 8px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+}
+
+legend {
+    border: 0px solid red;
+    border-radius: @border-radius-base;
+    color: #333333;
+    display: block;
+    font-size: @font-size-base * 1.3;
+    line-height: inherit;
+    margin-bottom: 0;
+    padding: @line-height-base;
+    width: 100% !important;
+    background: white;
+    background-color: #cccccc;
+}
+
+.label {
+    background-color: #cccccc;
+    color: #FFFFFF;
+    display: block;
+    font-size: @font-size-base / 1.3;
+    font-weight: 500;
+    line-height: @line-height-base;
+    padding: @line-height-base;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: @border-radius-base;
+}
+
+div.formHelp, span.formHelp {
+    color: black;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+fieldset {
+    border: 0px dotted #CCCCCC;
+    line-height: 1.5em;
+    margin: 1em 0;
+    padding: 0 1em 1em;
+    width: auto;
+    background: white;
+    border-radius: @border-radius-base;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.section-text-will-toene .wrapper {
+  border-top: 20px solid @brand-twt;
+  border-left: 10px solid @brand-twt; 
+}
+.section-fakstheater .wrapper {
+  border-top: 20px solid @brand-faks;
+  border-left: 10px solid @brand-faks;
+}
+.section-andraerecords .wrapper {
+  border-top: 20px solid @brand-andrae;
+  border-left: 10px solid @brand-andrae;
+}
+
+
+h1, h2, h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+a {
+  outline: none !important;
+}
+
+p {
+    margin: 0px 0px @line-height-base 0px ;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0px;
+  border: 0px solid red;
+}
+
+.row {
+  border: 0px solid red;
+}
+
+
+#side {
+
+}
+
+
+
+.navbar {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+  margin-top: @line-height-base * 4.3;
+}
+
+.navbar .nav > li {
+  margin: 0px 0px @line-height-base / 4 0px;
+  text-align: left !important;
+  width: 100% !important;
+  background: #333333;
+  padding: @line-height-base / 3 0px @line-height-base / 3 0!important;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.navbar .nav > li > a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: @font-size-base * 1.5;
+}
+
+.navbar .nav > li > a:hover {
+  color: @gray-light;
+}
+
+.section-text-will-toene .selected {
+  background:  @brand-twt !important; 
+}
+.section-fakstheater .selected {
+  background: @brand-faks !important;
+}
+.section-andraerecords .selected {
+  background: @brand-andrae !important;
+}
+
+.selected a {
+  color: white;
+}
+
+#breadcrumbs {
+  font-size: @font-size-small - 2;
+  padding: @line-height-base / 2 0;
+}
+
+#edit-bar {
+  display: inline-block;
+  padding: @line-height-base / 2;
+  width: 100%;
+  background: #999;
+  font-size: @font-size-small;
+}
+
+#sub {
+  border: 0px solid red;
+  margin-bottom: @line-height-base;
+
+}
+
+
+#content #viewlet-above-content-title {
+  display: none;
+}
+
+#content-views {
+  margin: 0px;
+}
+
+#brand {
+  padding:  @line-height-base / 2 @line-height-base @line-height-base @line-height-base;
+  display: inline-block;
+  width: 100%; 
+  border-radius: 0px 0px 5px 5px;
+}
+
+.section-text-will-toene #brand {
+  background:  @brand-twt; 
+}
+.section-fakstheater #brand {
+  background: @brand-faks;
+}
+.section-andraerecords #brand {
+  background: @brand-andrae;
+}
+
+.logo {
+  vertical-align: bottom;
+  border: 0px solid red;
+}
+
+.claim {
+  vertical-align: bottom !important;
+  border: 0px solid red;
+  text-transform: uppercase;
+  color: white;
+  font-size: @font-size-small - 1;
+  margin-top: @line-height-base * 2;
+  line-height: @line-height-base / 2;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+  } 
+}
+
+#content {
+  border: 0px solid red;
+  background:url(../img/transparent.png)  repeat left top transparent;
+  margin-top: 0;
+  border-radius: 5px;
+  padding: @line-height-base;
+}
+
+.subsection-theaterstuecke,
+.subsection-ueber-uns,
+.subsection-konzerte,
+.subsection-workshops {
+
+#content {
+  border: 0px solid red;
+  background: transparent;
+  margin-top: 0;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.documentFirstHeading {
+  display: none;
+}
+
+}
+
+.item {
+  border: 0px solid red;
+  background:url(../img/transparent.png)  repeat left top transparent;
+  margin-top: 0;
+  margin-bottom: @line-height-base / 4; 
+  border-radius: 5px;
+  padding: @line-height-base;
+}
+
+.headline {
+  line-height: @line-height-base;
+}
+
+.summary {
+  color: black !important;
+  text-transform: uppercase;
+  font-size: @font-size-small * 2;
+}
+
+.documentFirstHeading {
+  text-transform: uppercase;
+  margin-bottom: @line-height-base;
+  font-size: @font-size-small * 2;
+}
+
+.description {
+  color: white !important;
+  margin-top: @line-height-base;
+  margin-bottom: @line-height-base;
+}
+
+
+.formControls {
+    background-color: #F5F5F5;
+    border-top: 1px solid #E5E5E5;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: @line-height-base;
+}
+
+
+
+// PORTLET NAVIGATION
+
+.portletNavigationTree {
+    border: 0px solid red;
+
+    .portletHeader {
+      display: none;
+
+    }
+
+    ul {
+       list-style: none;
+       padding: 0px 0px 0px 0px !important;
+       border: 0px solid red;
+       padding: 0;
+       margin: 0px !important;
+       text-align: left !important;
+       width: 60% !important; 
+    }
+
+    li {
+        margin: 0px 0px @line-height-base / 4 0px;
+        text-align: left !important;
+        width: 100% !important;
+        background: #333333;
+        padding: @line-height-base / 3 0px @line-height-base / 3 @line-height-base / 2 !important;
+        border-radius: 0px 5px 5px 0px;
+        
+
+        a {
+            font-size: @font-size-base + 3;
+            background: transparent;
+            text-align: left !important;
+            font-weight: bold;
+            border: 0px solid red;
+            color: white;
+        }
+
+        a:hover {
+            background: transparent;
+            text-decoration: none;
+            color: @gray-light !important;
+        }
+
+        span {
+            padding: 0px 0px 0px 0px !important;
+            text-align: left !important;
+            line-height: @line-height-base;
+        }    
+    }
+
+.navTreeCurrentItem span {
+    color: white !important;
+}
+
+    .contenttype-folder img,
+    .contenttype-formfolder img {
+        display: none;
+    }
+}
+
+.section-text-will-toene .navTreeCurrentNode {
+  background:  @brand-twt !important; 
+}
+.section-fakstheater .navTreeCurrentNode {
+  background: @brand-faks !important;
+}
+.section-andraerecords .navTreeCurrentNode {
+  background: @brand-andrae !important;
+}
+
+
+
+#site-footer {
+  background: #858387;
+  color: white;
+  font-size: @font-size-small;
+
+  address {
+    font-size: @font-size-small;
+  }
+
+  .center {
+    margin-top: @line-height-base * 3;
+  }
+}
