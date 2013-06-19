@@ -37,6 +37,12 @@ dt, dd {
 dl {
     margin-bottom: @line-height-base;
 }
+
+ul, ol {
+    margin: @line-height-base 0 @line-height-base @line-height-base / 2;
+    padding: 0;
+}
+
 hr {
     margin: @line-height-base 0;
 }
@@ -188,6 +194,19 @@ p {
   background: @brand-andrae !important;
 }
 
+
+
+.section-text-will-toene #content a {
+  color:  @brand-twt !important; 
+}
+.section-fakstheater #content a {
+  color: #993333 !important;
+}
+.section-andraerecords #content a {
+  color: @brand-andrae !important;
+}
+
+
 .selected a {
   color: white;
 }
@@ -269,9 +288,13 @@ p {
 }
 
 .subsection-theaterstuecke,
-.subsection-ueber-uns,
+.subsection-ueber-uns-twt,
+.subsection-ueber-uns-fakstheater,
 .subsection-konzerte,
-.subsection-workshops {
+.subsection-workshops,
+.subsection-projekte,
+.subsection-presse,
+.subsection-impressum-1 {
 
 #content {
   border: 0px solid red;
@@ -279,6 +302,10 @@ p {
   margin-top: 0;
   border-radius: 5px;
   padding: 0;
+}
+
+.subsection-presse-presse-der-pflaumenbaum #content {
+  background:url(../img/transparent.png)  repeat left top !important;
 }
 
 .documentFirstHeading {

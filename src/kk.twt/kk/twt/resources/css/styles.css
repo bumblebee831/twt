@@ -5419,6 +5419,11 @@ dd {
 dl {
   margin-bottom: 25px;
 }
+ul,
+ol {
+  margin: 25px 0 25px 12.5px;
+  padding: 0;
+}
 hr {
   margin: 25px 0;
 }
@@ -5562,6 +5567,15 @@ p {
 .section-andraerecords .selected {
   background: #339900 !important;
 }
+.section-text-will-toene #content a {
+  color: #016277 !important;
+}
+.section-fakstheater #content a {
+  color: #993333 !important;
+}
+.section-andraerecords #content a {
+  color: #339900 !important;
+}
 .selected a {
   color: white;
 }
@@ -5628,19 +5642,37 @@ p {
   padding: 25px;
 }
 .subsection-theaterstuecke #content,
-.subsection-ueber-uns #content,
+.subsection-ueber-uns-twt #content,
+.subsection-ueber-uns-fakstheater #content,
 .subsection-konzerte #content,
-.subsection-workshops #content {
+.subsection-workshops #content,
+.subsection-projekte #content,
+.subsection-presse #content,
+.subsection-impressum-1 #content {
   border: 0px solid red;
   background: transparent;
   margin-top: 0;
   border-radius: 5px;
   padding: 0;
 }
+.subsection-theaterstuecke .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-ueber-uns-twt .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-ueber-uns-fakstheater .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-konzerte .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-workshops .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-projekte .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-presse .subsection-presse-presse-der-pflaumenbaum #content,
+.subsection-impressum-1 .subsection-presse-presse-der-pflaumenbaum #content {
+  background: url(../img/transparent.png) repeat left top !important;
+}
 .subsection-theaterstuecke .documentFirstHeading,
-.subsection-ueber-uns .documentFirstHeading,
+.subsection-ueber-uns-twt .documentFirstHeading,
+.subsection-ueber-uns-fakstheater .documentFirstHeading,
 .subsection-konzerte .documentFirstHeading,
-.subsection-workshops .documentFirstHeading {
+.subsection-workshops .documentFirstHeading,
+.subsection-projekte .documentFirstHeading,
+.subsection-presse .documentFirstHeading,
+.subsection-impressum-1 .documentFirstHeading {
   display: none;
 }
 .item {
