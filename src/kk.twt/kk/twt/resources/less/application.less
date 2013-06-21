@@ -127,8 +127,13 @@ fieldset {
 
 
 h1, h2, h3 {
-    margin-bottom: 0px;
+    margin-bottom: @line-height-base / 2;
     margin-top: 0px;
+    line-height: @line-height-base;
+}
+
+h3 {
+    font-size: @font-size-base + 3;
 }
 
 a {
@@ -136,7 +141,12 @@ a {
 }
 
 p {
-    margin: 0px 0px @line-height-base 0px ;
+    margin: 0px 0px @line-height-base / 3 0px ;
+}
+
+table.listing {
+  margin-bottom: 25px;
+  border: 1px solid red !important;
 }
 
 .container {
@@ -149,12 +159,9 @@ p {
   border: 0px solid red;
 }
 
-
 #side {
 
 }
-
-
 
 .navbar {
   background-color: transparent;
@@ -285,6 +292,7 @@ p {
   margin-top: 0;
   border-radius: 5px;
   padding: @line-height-base;
+  font-size: @font-size-base - 2;
 }
 
 .subsection-theaterstuecke,
@@ -340,9 +348,18 @@ p {
 }
 
 .description {
-  color: white !important;
   margin-top: @line-height-base;
   margin-bottom: @line-height-base;
+}
+
+.section-text-will-toene .description {
+  color:  @brand-twt; 
+}
+.section-fakstheater .description {
+  color: #993333;
+}
+.section-andraerecords .description {
+  color: @brand-andrae;
 }
 
 

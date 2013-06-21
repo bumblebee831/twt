@@ -5517,14 +5517,22 @@ fieldset {
 h1,
 h2,
 h3 {
-  margin-bottom: 0px;
+  margin-bottom: 12.5px;
   margin-top: 0px;
+  line-height: 25px;
+}
+h3 {
+  font-size: 19px;
 }
 a {
   outline: none !important;
 }
 p {
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 8.333333333333334px 0px;
+}
+table.listing {
+  margin-bottom: 25px;
+  border: 1px solid red !important;
 }
 .container {
   max-width: 940px;
@@ -5640,6 +5648,7 @@ p {
   margin-top: 0;
   border-radius: 5px;
   padding: 25px;
+  font-size: 14px;
 }
 .subsection-theaterstuecke #content,
 .subsection-ueber-uns-twt #content,
@@ -5697,9 +5706,17 @@ p {
   font-size: 28px;
 }
 .description {
-  color: white !important;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.section-text-will-toene .description {
+  color: #016277;
+}
+.section-fakstheater .description {
+  color: #993333;
+}
+.section-andraerecords .description {
+  color: #339900;
 }
 .formControls {
   background-color: #F5F5F5;
