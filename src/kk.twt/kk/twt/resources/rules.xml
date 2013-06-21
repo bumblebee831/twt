@@ -9,7 +9,7 @@
          tiles editiong overlays -->
     <!--<theme href="minimal.html" if-path="@@edit-tile" />-->
 
-    <!--<theme href="frontpage.html" css:if-content="body.site-twt"/>-->
+    <theme href="frontpage.html" css:if-content="body.section-front-page" />-->
     <theme href="twt.html" css:if-content="body.section-text-will-toene" />
     <theme href="faks.html" css:if-content="body.section-fakstheater" />
     <theme href="andrae.html" css:if-content="body.section-andraerecords" />
