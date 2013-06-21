@@ -47,19 +47,38 @@ hr {
     margin: @line-height-base 0;
 }
 
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+select, 
+textarea,
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"] {
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     color: #555555;
-    display: block;
+    display: inline-block;
     font-size: 16px;
     line-height: 25px;
     min-height: 20px;
     padding: 8px 12px;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     vertical-align: middle;
+}
+
+select, input[type="file"] {
+    max-height: 40px;
 }
 
 legend {
@@ -146,7 +165,7 @@ p {
 
 table.listing {
   margin-bottom: 25px;
-  border: 1px solid red !important;
+  border: 0px solid red !important;
 }
 
 .container {
@@ -201,6 +220,14 @@ table.listing {
   background: @brand-andrae !important;
 }
 
+#content-views .selected {
+  background: transparent !important;
+}
+
+.formTabs .selected {
+  background: #efefef !important;
+}
+
 
 
 .section-text-will-toene #content a {
@@ -229,6 +256,8 @@ table.listing {
   width: 100%;
   background: #999;
   font-size: @font-size-small;
+  margin-bottom: @line-height-base / 2;
+  border-radius: @border-radius-base;
 }
 
 #sub {
