@@ -5678,15 +5678,6 @@ table.listing {
   border-radius: 5px;
   padding: 0;
 }
-.subsection-theaterstuecke .subsection-presse-presse-der-pflaumenbaum #content,
-.subsection-ueber-uns-twt .subsection-presse-presse-der-pflaumenbaum #content,
-.subsection-konzerte .subsection-presse-presse-der-pflaumenbaum #content,
-.subsection-workshops .subsection-presse-presse-der-pflaumenbaum #content,
-.subsection-projekte .subsection-presse-presse-der-pflaumenbaum #content,
-.subsection-presse .subsection-presse-presse-der-pflaumenbaum #content,
-.subsection-impressum-1 .subsection-presse-presse-der-pflaumenbaum #content {
-  background: url(../img/transparent.png) repeat left top !important;
-}
 .subsection-theaterstuecke .documentFirstHeading,
 .subsection-ueber-uns-twt .documentFirstHeading,
 .subsection-konzerte .documentFirstHeading,
@@ -5720,15 +5711,6 @@ table.listing {
 .description {
   margin-top: 25px;
   margin-bottom: 25px;
-}
-.section-text-will-toene .description {
-  color: #016277;
-}
-.section-fakstheater .description {
-  color: #993333;
-}
-.section-andraerecords .description {
-  color: #339900;
 }
 .formControls {
   background-color: #F5F5F5;
@@ -5766,7 +5748,7 @@ table.listing {
   text-align: left !important;
   font-weight: bold;
   border: 0px solid red;
-  color: white;
+  color: white !important;
 }
 .portletNavigationTree li a:hover {
   background: transparent;
