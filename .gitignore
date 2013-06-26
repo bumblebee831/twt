@@ -33,4 +33,5 @@ src/sauna.reload
 src/vwc.toolbar/
 src/kk.bannertool
 src/plone.app.contenttypes
+src/ade25.fabfiles
 .codeintel/

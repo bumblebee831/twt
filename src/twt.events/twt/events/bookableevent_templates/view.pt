@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="twt.events">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+
+    <article class="twt-event"
+      tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
+      <header class="twt-event-header">
+        <h1 class="documentFirstHeading">
+          <span tal:replace="context/Title" />
+          <small>
+            <span tal:condition="context/bookable" class="label">Buchbar</span>
+            <span tal:condition="not:context/bookable" class="label label-danger">Nicht buchbar</span>
+          </small>
+        </h1>
+      </header>
+      <p class="lead" tal:condition="context/Description"
+        tal:content="context/Description" />
+        <hr>
+      <p tal:define="eventdate context/start">
+        <strong>Datum:</strong>
+        <span tal:replace="python:toLocalizedTime(eventdate)" />
+      </p>
+      <p>
+        <strong>Ort:</strong>
+        <span tal:replace="context/location" />
+      </p>
+
+    </article>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
