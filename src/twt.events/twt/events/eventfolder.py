@@ -45,9 +45,10 @@ class View(grok.View):
         obj = item.getObject()
         title = obj.title
         start = obj.start
-        time = api.portal.get_localized_time(datetime=start)
+        datestamp = api.portal.get_localized_time(datetime=start)
+        timestamp = api.portal.get_localized_time(datetime=start, time_only=True)
         title_param = '?veranstaltungstitel=' + title
-        time_param = '&veranstaltungsdatum=' + time
+        time_param = '&veranstaltungsdatum=' + datestamp * ' ' + timestamp
         base_url = portal_url + '/karten'
         url = base_url + title_param + time_param
         return url
