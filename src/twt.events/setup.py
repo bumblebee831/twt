@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='twt.events',
       version=version,
-      description="Event schadule andnd enquiry form",
+      description="Event schadule and enquiry form",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -16,9 +16,9 @@ setup(name='twt.events',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='',
-      author='Vorwaerts Werbung GbR',
-      author_email='cb@vorwaerts-werbung.de',
-      url='http://dist.vorwaerts-werbung.de',
+      author='Kreativkombinat GbR',
+      author_email='cb@kreativkombinat.de',
+      url='http://dist.kreativkombinat.de',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['twt'],

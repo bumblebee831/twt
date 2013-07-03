@@ -5474,17 +5474,29 @@ legend {
   background-color: #cccccc;
 }
 .label {
-  background-color: #cccccc;
-  color: #FFFFFF;
-  display: block;
-  font-size: 12.307692307692307px;
+  padding: 12.5px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+.btn-default {
+  background-color: #A7A9AA;
+  border-color: #A7A9AA;
+  color: white !important;
+}
+.btn {
+  border: 1px solid transparent;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
   font-weight: 500;
   line-height: 25px;
-  padding: 25px;
+  margin-bottom: 0;
+  padding: 12.5px;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-  border-radius: 4px;
+  text-transform: uppercase;
 }
 div.formHelp,
 span.formHelp {
@@ -5589,7 +5601,7 @@ table.listing {
   background: #efefef !important;
 }
 .section-text-will-toene #content a {
-  color: #016277 !important;
+  color: #016277;
 }
 .section-fakstheater #content a {
   color: #993333 !important;
@@ -5713,6 +5725,13 @@ table.listing {
   margin-top: 25px;
   margin-bottom: 12.5px;
 }
+.twt-events .col {
+  border-top: 1px solid #999999;
+  padding-top: 25px;
+}
+.twt-events h3 {
+  font-size: 21px;
+}
 .description {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -5769,7 +5788,8 @@ table.listing {
   color: white !important;
 }
 .portletNavigationTree .contenttype-folder img,
-.portletNavigationTree .contenttype-formfolder img {
+.portletNavigationTree .contenttype-formfolder img,
+.portletNavigationTree .contenttype-twt-events-eventfolder img {
   display: none;
 }
 .section-text-will-toene .navTreeCurrentNode {
