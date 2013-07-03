@@ -5708,6 +5708,11 @@ table.listing {
   margin-bottom: 25px;
   font-size: 21px;
 }
+.section-karten .documentFirstHeading {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 12.5px;
+}
 .description {
   margin-top: 25px;
   margin-bottom: 25px;

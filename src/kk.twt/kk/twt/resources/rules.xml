@@ -13,7 +13,7 @@
     <theme href="twt.html" css:if-content="body.section-text-will-toene" />
     <theme href="faks.html" css:if-content="body.section-fakstheater" />
     <theme href="andrae.html" css:if-content="body.section-andraerecords" />
-     <theme href="twt.html" css:if-content="body.section-termine" />
+    <theme href="karten.html" css:if-content="body.section-karten" />
     
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
