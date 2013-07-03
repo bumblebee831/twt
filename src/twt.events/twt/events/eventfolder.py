@@ -9,8 +9,6 @@ from plone.app.contentlisting.interfaces import IContentListing
 
 from twt.events.bookableevent import IBookableEvent
 
-from twt.events import MessageFactory as _
-
 
 class IEventFolder(form.Schema, IImageScaleTraversable):
     """
@@ -41,3 +39,15 @@ class View(grok.View):
                         sort_on='start',
                         review_state='published')
         return IContentListing(items)
+
+    def generate_booking_link(self, item):
+        portal_url = api.portal.get().absolute_url()
+        obj = item.getObject()
+        title = obj.title
+        start = obj.start
+        time = api.portal.get_localized_time(datetime=start)
+        title_param = '?veranstaltungstitel=' + title
+        time_param = '&veranstaltungsdatum=' + time
+        base_url = portal_url + '/karten'
+        url = base_url + title_param + time_param
+        return url
