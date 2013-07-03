@@ -20,13 +20,13 @@
                        batch python:Batch(results, b_size, b_start);">
         <tal:block tal:repeat="item batch">
           <div class="row">
-            <div class="col col-lg-8">
+            <div class="col col-8 col-lg-8">
               <small tal:define="eventdate item/start"
                 tal:content="python:toLocalizedTime(eventdate)" />
               <h5><span tal:content="item/Title" /><br />
                 <small tal:content="item/location" /></h5>
             </div>
-            <div class="col col-lg-4">
+            <div class="col col-4 col-lg-4">
               <a href="href"
                 tal:condition="item/bookable"
                 tal:attributes="href item/getURL"
