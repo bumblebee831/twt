@@ -39,22 +39,15 @@
                 <h4><small tal:content="item/location" /></h4>
                 <p class="discreet" tal:condition="item/Description"
                     tal:content="item/Description" />
-
             </div>
-
-
-
-
             <div class="col col-3 col-lg-3">
               <a href="href"
                 tal:define="booking_url python:view.generate_booking_link(item)"
                 tal:condition="item/bookable"
                 tal:attributes="href booking_url"
                 class="label label-info">Jetzt Buchen</a>
-
               <span tal:condition="item/notbookable"
                 class="label label-warning">Nicht buchbar</span>
-
               <span tal:condition="item/soldout"
                 class="label label-danger">Ausverkauft</span>
             </div>
