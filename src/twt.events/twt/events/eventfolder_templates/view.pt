@@ -50,9 +50,13 @@
                 tal:define="booking_url python:view.generate_booking_link(item)"
                 tal:condition="item/bookable"
                 tal:attributes="href booking_url"
-                class="btn btn-default">Buchen</a>
+                class="label label-info">Jetzt Buchen</a>
+
+              <span tal:condition="item/notbookable"
+                class="label label-warning">Nicht buchbar</span>
+
               <span tal:condition="item/soldout"
-                class="label label-danger">Ausgebucht</span>
+                class="label label-danger">Ausverkauft</span>
             </div>
           </div>
         </tal:block>

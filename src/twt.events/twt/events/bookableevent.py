@@ -24,6 +24,15 @@ class IBookableEvent(form.Schema, IImageScaleTraversable):
         title=_(u"Event Location"),
         required=True,
     )
+    
+    notbookable = schema.Bool(
+        title=_(u"Notbookable?"),
+        description=_(u"Mark this event as notbookable and a notbooking link will "
+                      u"be auto-generated"),
+        default=True,
+        required=False,
+    )
+
     bookable = schema.Bool(
         title=_(u"Bookable?"),
         description=_(u"Mark this event as bookable and a booking link will "
@@ -31,6 +40,7 @@ class IBookableEvent(form.Schema, IImageScaleTraversable):
         default=True,
         required=False,
     )
+
     soldout = schema.Bool(
         title=_(u"Sold out"),
         required=False,

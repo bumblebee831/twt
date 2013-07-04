@@ -5477,11 +5477,17 @@ legend {
   padding: 12.5px;
   text-transform: uppercase;
   line-height: 25px;
+  display: inline-block;
+  width: 100%;
+}
+a.label-info {
+  color: white !important;
 }
 .btn-default {
   background-color: #A7A9AA;
   border-color: #A7A9AA;
   color: white !important;
+  width: 100% !important;
 }
 .btn {
   border: 1px solid transparent;
