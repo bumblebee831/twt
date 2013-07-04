@@ -5424,6 +5424,10 @@ ol {
   margin: 25px 0 25px 12.5px;
   padding: 0;
 }
+blockquote {
+  margin: 0;
+  padding: 25px;
+}
 hr {
   margin: 25px 0;
 }
@@ -5610,7 +5614,7 @@ table.listing {
   color: #016277;
 }
 .section-fakstheater #content a {
-  color: #993333 !important;
+  color: #993333;
 }
 .section-andraerecords #content a {
   color: #339900 !important;
@@ -5732,8 +5736,14 @@ table.listing {
   margin-bottom: 12.5px;
 }
 .twt-events .col {
-  border-top: 1px solid #999999;
+  border-top: 0px solid #999999;
   padding-top: 25px;
+}
+.twt-events .row {
+  border: 0px solid red;
+  margin-bottom: 12.5px;
+  background: #eeeeee;
+  border-radius: 4px;
 }
 .twt-events h3 {
   font-size: 21px;

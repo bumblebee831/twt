@@ -43,6 +43,11 @@ ul, ol {
     padding: 0;
 }
 
+blockquote {
+    margin: 0;
+    padding: @line-height-base;
+}
+
 hr {
     margin: @line-height-base 0;
 }
@@ -259,7 +264,7 @@ table.listing {
   color:  @brand-twt; 
 }
 .section-fakstheater #content a {
-  color: #993333 !important;
+  color: #993333;
 }
 .section-andraerecords #content a {
   color: @brand-andrae !important;
@@ -403,8 +408,15 @@ table.listing {
 }
 
 .twt-events .col {
-  border-top: 1px solid @gray-light;
+  border-top: 0px solid @gray-light;
   padding-top: @line-height-base;
+}
+
+.twt-events .row {
+  border: 0px solid red;
+  margin-bottom: @line-height-base / 2;
+  background: @gray-lighter;
+  border-radius: @border-radius-base;
 }
 
 .twt-events h3 {
