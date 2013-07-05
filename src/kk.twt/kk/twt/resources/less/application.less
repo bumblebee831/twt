@@ -9,7 +9,7 @@
 // bootstrap default files without even touching them, e.g.:
 
 @font-size-base:          16px;
-@line-height-base:        25px;
+@line-height-computed:        25px;
 
 
 // Use web-font as a lorem ipsum replacement - add class "wireframed" to make
@@ -31,25 +31,25 @@ dd {
     margin-left: 0px;
 }
 dt, dd {
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
 }
 
 dl {
-    margin-bottom: @line-height-base;
+    margin-bottom: @line-height-computed;
 }
 
 ul, ol {
-    margin: @line-height-base 0 @line-height-base @line-height-base / 2;
+    margin: @line-height-computed 0 @line-height-computed @line-height-computed / 2;
     padding: 0;
 }
 
 blockquote {
     margin: 0;
-    padding: @line-height-base;
+    padding: @line-height-computed;
 }
 
 hr {
-    margin: @line-height-base 0;
+    margin: @line-height-computed 0;
 }
 
 select, 
@@ -94,16 +94,16 @@ legend {
     font-size: @font-size-base * 1.3;
     line-height: inherit;
     margin-bottom: 0;
-    padding: @line-height-base;
+    padding: @line-height-computed;
     width: 100% !important;
     background: white;
     background-color: #cccccc;
 }
 
 .label {
-    padding: @line-height-base / 2;
+    padding: @line-height-computed / 2;
     text-transform: uppercase;
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
     display: inline-block;
     width: 100%;   
 }
@@ -127,9 +127,9 @@ a.label-info {
     display: inline-block;
     font-size: @font-size-base - 5;
     font-weight: 500;
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
     margin-bottom: 0;
-    padding: @line-height-base / 2;
+    padding: @line-height-computed / 2;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
@@ -174,11 +174,10 @@ fieldset {
   border-left: 10px solid @brand-andrae;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: @line-height-base / 2;
+    margin-bottom: @line-height-computed / 2;
     margin-top: 0px;
-    line-height: @line-height-base;
+    line-height: @line-height-computed;
 }
 
 h3 {
@@ -190,7 +189,7 @@ a {
 }
 
 p {
-    margin: 0px 0px @line-height-base / 3 0px ;
+    margin: 0px 0px @line-height-computed / 3 0px ;
 }
 
 table.listing {
@@ -208,24 +207,20 @@ table.listing {
   border: 0px solid red;
 }
 
-#side {
-
-}
-
 .navbar {
   background-color: transparent;
   border-radius: 0;
   padding: 0;
   position: relative;
-  margin-top: @line-height-base * 4.3;
+  margin-top: @line-height-computed * 4.3;
 }
 
 .navbar .nav > li {
-  margin: 0px 0px @line-height-base / 4 0px;
+  margin: 0px 0px @line-height-computed / 4 0px;
   text-align: left !important;
   width: 100% !important;
   background: #333333;
-  padding: @line-height-base / 3 0px @line-height-base / 3 0!important;
+  padding: @line-height-computed / 3 0px @line-height-computed / 3 0!important;
   border-radius: 0px 5px 5px 0px;
 }
 
@@ -258,8 +253,6 @@ table.listing {
   background: #efefef !important;
 }
 
-
-
 .section-text-will-toene #content a {
   color:  @brand-twt; 
 }
@@ -270,29 +263,28 @@ table.listing {
   color: @brand-andrae !important;
 }
 
-
 .selected a {
   color: white;
 }
 
 #breadcrumbs {
   font-size: @font-size-small - 2;
-  padding: @line-height-base / 2 0;
+  padding: @line-height-computed / 2 0;
 }
 
 #edit-bar {
   display: inline-block;
-  padding: @line-height-base / 2;
+  padding: @line-height-computed / 2;
   width: 100%;
   background: #999;
   font-size: @font-size-small;
-  margin-bottom: @line-height-base / 2;
+  margin-bottom: @line-height-computed / 2;
   border-radius: @border-radius-base;
 }
 
 #sub {
   border: 0px solid red;
-  margin-bottom: @line-height-base;
+  margin-bottom: @line-height-computed;
 
 }
 
@@ -306,7 +298,7 @@ table.listing {
 }
 
 #brand {
-  padding:  @line-height-base / 2 @line-height-base @line-height-base @line-height-base;
+  padding:  @line-height-computed / 2 @line-height-computed @line-height-computed @line-height-computed;
   display: inline-block;
   width: 100%; 
   border-radius: 0px 0px 5px 5px;
@@ -333,8 +325,8 @@ table.listing {
   text-transform: uppercase;
   color: white;
   font-size: @font-size-small - 1;
-  margin-top: @line-height-base * 2;
-  line-height: @line-height-base / 2;
+  margin-top: @line-height-computed * 2;
+  line-height: @line-height-computed / 2;
 
   a {
     color: white;
@@ -350,7 +342,7 @@ table.listing {
   background: white;
   margin-top: 0;
   border-radius: 5px;
-  padding: @line-height-base;
+  padding: @line-height-computed;
   font-size: @font-size-base - 2;
 }
 
@@ -380,13 +372,13 @@ table.listing {
   border: 0px solid red;
   background: white;
   margin-top: 0;
-  margin-bottom: @line-height-base / 4; 
+  margin-bottom: @line-height-computed / 4; 
   border-radius: 5px;
-  padding: @line-height-base;
+  padding: @line-height-computed;
 }
 
 .headline {
-  line-height: @line-height-base;
+  line-height: @line-height-computed;
 }
 
 .summary {
@@ -397,24 +389,25 @@ table.listing {
 
 .documentFirstHeading {
   text-transform: uppercase;
-  margin-bottom: @line-height-base;
+  margin-bottom: @line-height-computed;
   font-size: @font-size-small * 1.5;
 }
 
 .section-karten .documentFirstHeading {
   color: white;
-  margin-top: @line-height-base;
-  margin-bottom: @line-height-base / 2;
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed / 2;
 }
 
 .twt-events .col {
   border-top: 0px solid @gray-light;
-  padding-top: @line-height-base;
+  padding-top: @line-height-computed / 2;
+  padding-bottom: @line-height-computed / 2;
 }
 
 .twt-events .row {
   border: 0px solid red;
-  margin-bottom: @line-height-base / 2;
+  margin-bottom: @line-height-computed / 2;
   background: @gray-lighter;
   border-radius: @border-radius-base;
 }
@@ -424,8 +417,8 @@ table.listing {
 }
 
 .description {
-  margin-top: @line-height-base;
-  margin-bottom: @line-height-base;
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
 }
 
 
@@ -434,7 +427,7 @@ table.listing {
     border-top: 1px solid #E5E5E5;
     margin-bottom: 0px;
     margin-top: 0px;
-    padding: @line-height-base;
+    padding: @line-height-computed;
 }
 
 
@@ -460,11 +453,11 @@ table.listing {
     }
 
     li {
-        margin: 0px 0px @line-height-base / 4 0px;
+        margin: 0px 0px @line-height-computed / 4 0px;
         text-align: left !important;
         width: 100% !important;
         background: #333333;
-        padding: @line-height-base / 3 0px @line-height-base / 3 @line-height-base / 2 !important;
+        padding: @line-height-computed / 3 0px @line-height-computed / 3 @line-height-computed / 2 !important;
         border-radius: 0px 5px 5px 0px;
         
 
@@ -486,7 +479,7 @@ table.listing {
         span {
             padding: 0px 0px 0px 0px !important;
             text-align: left !important;
-            line-height: @line-height-base;
+            line-height: @line-height-computed;
         }    
     }
 
@@ -523,6 +516,6 @@ table.listing {
   }
 
   .center {
-    margin-top: @line-height-base * 3;
+    margin-top: @line-height-computed * 3;
   }
 }
