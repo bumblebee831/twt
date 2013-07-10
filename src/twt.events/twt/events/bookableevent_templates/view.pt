@@ -27,6 +27,7 @@
       <p tal:define="eventdate context/start">
         <strong>Datum:</strong>
         <span tal:replace="python:toLocalizedTime(eventdate)" />
+        <small tal:content="python:toLocalizedTime(eventdate, time_only=True)" /> Uhr
       </p>
       <p>
         <strong>Ort:</strong>
