@@ -9,9 +9,9 @@ env.port = '22222'
 env.user = 'root'
 env.hosts = ['zope1']
 env.webserver = '/opt/webserver/buildout.webserver'
-env.code_root = '/opt/sites/plonesite/buildout.plonesite'
-env.local_root = '/Users/sd/z5/twt/buildout.twt'
-env.sitename = 're'
+env.code_root = '/opt/sites/twt/buildout.twt'
+env.local_root = '/Users/cb/dev/kk-projects/buildout.twt'
+env.sitename = 'twt'
 env.code_user = 'root'
 env.prod_user = 'www'
 
