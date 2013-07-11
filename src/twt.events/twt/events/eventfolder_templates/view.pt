@@ -20,7 +20,8 @@
                        batch python:Batch(results, b_size, b_start);">
         <tal:block tal:repeat="item batch">
           <div class="row"
-            tal:define="eventdate item/start">
+            tal:define="item_obj item/getObject;
+                        eventdate item_obj/start">
             <div class="col col-2 col-lg-2">
               <small tal:define="item_obj item/getObject;"
                 tal:content="python:view.format_time(item_obj.start)" />
