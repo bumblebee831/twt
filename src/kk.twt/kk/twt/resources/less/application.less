@@ -1,27 +1,5 @@
-// Custom application specific styles
-//--------------------------------------
-
-
-// Bootstrap overrides
-// -------------------
-
-// Just take and redefine variables form variables.less in order to customize
-// bootstrap default files without even touching them, e.g.:
-
-@font-size-base:          16px;
-@line-height-computed:        25px;
-
-
-// Use web-font as a lorem ipsum replacement - add class "wireframed" to make
-// blocks of text act as a placeholder
-.wireframed {
-  font-family: 'redactedregular';
-  color: @gray;
-}
-
-
 // Application specific styles 
-
+//--------------------------------------
 
 body {
   background: transparent;
@@ -99,45 +77,6 @@ legend {
     background: white;
     background-color: #cccccc;
 }
-
-.label {
-    padding: @line-height-computed / 2;
-    text-transform: uppercase;
-    line-height: @line-height-computed;
-    display: inline-block;
-    width: 100%;   
-}
-
-a.label-info {
-  color: white !important;
-
-}
-
-.btn-default {
-    background-color: #A7A9AA;
-    border-color: #A7A9AA;
-    color: white !important;
-    width: 100% !important;
-}
-
-.btn {
-    border: 1px solid transparent;
-    border-radius: 4px 4px 4px 4px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: @font-size-base - 5;
-    font-weight: 500;
-    line-height: @line-height-computed;
-    margin-bottom: 0;
-    padding: @line-height-computed / 2;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    text-transform: uppercase;
-
-}
-
-
 
 div.formHelp, span.formHelp {
     color: black;
@@ -251,16 +190,6 @@ table.listing {
 
 .formTabs .selected {
   background: #efefef !important;
-}
-
-.section-text-will-toene #content a {
-  color:  @brand-twt; 
-}
-.section-fakstheater #content a {
-  color: #993333;
-}
-.section-andraerecords #content a {
-  color: @brand-andrae !important;
 }
 
 .selected a {
