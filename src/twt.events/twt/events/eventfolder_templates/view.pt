@@ -30,7 +30,10 @@
               <small tal:content="python:toLocalizedTime(eventdate, time_only=True)" />
             </div>
             <div class="col col-6 col-lg-6">
-              <h3><span tal:content="item/Title" /></h3>
+                <h3><span tal:content="item/Title" />
+                    <span tal:condition="item/soldout"
+                        class="label label-danger">Ausverkauft</span>
+                </h3>
                 <h4><small tal:content="item/location" /></h4>
                 <p class="discreet" tal:condition="item/Description"
                     tal:content="item/Description" />
@@ -41,8 +44,6 @@
                 tal:condition="item/bookable"
                 tal:attributes="href booking_url"
                 class="btn btn-info">Reservieren</a>
-              <span tal:condition="item/soldout"
-                class="label label-danger">Ausverkauft</span>
             </div>
           </div>
         </tal:block>
