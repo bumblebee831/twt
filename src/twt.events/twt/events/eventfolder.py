@@ -56,4 +56,4 @@ class View(grok.View):
     def format_time(self, time):
         util = api.portal.get_tool(name="translation_service")
         # zope_time = DateTime(time.isoformat())
-        return util.toLocalizedTime(time, long_format=False)
+        return util.toLocalizedTime(time, long_format=True)
