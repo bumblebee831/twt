@@ -22,7 +22,7 @@
           <div class="row"
             tal:define="eventdate item/start">
             <div class="col col-2 col-lg-2">
-              <small tal:content="python:toLocalizedTime(eventdate)" />
+              <small tal:content="python:view.format_time(eventdate)" />
             </div>
             <div class="col col-1 col-lg-1">
               <small tal:content="python:toLocalizedTime(eventdate, time_only=True)" />

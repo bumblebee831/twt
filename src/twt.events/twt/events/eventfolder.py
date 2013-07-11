@@ -52,3 +52,8 @@ class View(grok.View):
         base_url = portal_url + '/karten'
         url = base_url + title_param + time_param
         return url
+
+    def format_time(self, time):
+        util = api.portal.get_tool(name="translation_service")
+        # zope_time = DateTime(time.isoformat())
+        return util.toLocalizedTime(time, long_format=False)
