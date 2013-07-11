@@ -4678,21 +4678,29 @@ div.formHelp {
 }
 input.context,
 input.standalone {
-  display: inline-block;
   padding: 8px 12px;
-  margin-bottom: 0;
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.428571429;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 0;
+  padding: 11px 22px;
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
   white-space: nowrap;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #a7a9aa;
   border-color: #a7a9aa;
+  background-color: #A7A9AA;
+  border-color: #A7A9AA;
+  color: white !important;
+  width: 100% !important;
+  border-radius: 4px;
   margin-right: 11px;
 }
 input.context:focus,
@@ -5830,6 +5838,39 @@ table.listing {
 }
 .twt-events h3 {
   font-size: 21px;
+}
+.label {
+  padding: 11px 22px;
+  text-transform: uppercase;
+  line-height: 25px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 4px;
+}
+a.label-info {
+  color: white !important;
+}
+.btn-default {
+  background-color: #A7A9AA;
+  border-color: #A7A9AA;
+  color: white !important;
+  width: 100% !important;
+  border-radius: 4px;
+}
+.btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 0;
+  padding: 11px 22px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 .description {
   margin-top: 22px;
